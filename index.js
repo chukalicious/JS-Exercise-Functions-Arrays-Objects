@@ -153,9 +153,13 @@ getName('Kat');
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+
+let fruit = ['orange', 'grape', 'apple', 'banana', 'mango']
+function appleIndex(arr) {
+  let faveFruit = arr[2];
+  return faveFruit; 
 }
+appleIndex(fruit); 
 
 /**
  * ### Challenge `isItAnApple`
