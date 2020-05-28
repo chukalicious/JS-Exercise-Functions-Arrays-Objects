@@ -60,7 +60,7 @@ function temperatureCtoF(degrees) {
   let farenheit = degrees * (9/5) + 32; 
   return Math.round(farenheit)
 }
-temperatureCtoF(24); 
+console.log(temperatureCtoF(24))
 
 /**
  * ### Challenge `temperatureInF`
@@ -79,9 +79,18 @@ temperatureCtoF(24);
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  if(unit === "F") {
+    return temp + unit; 
+  } else if (unit === 'C') {
+      unit = "F"
+      let farenheit = temp * (9/5) + 32; 
+      return Math.round(farenheit) + unit; 
+  }
 }
+/* console.log(temperatureInF(88, "F")) */
+console.log(temperatureInF(24, "C"))
+
 
 
 /**
