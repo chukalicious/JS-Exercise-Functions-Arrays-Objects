@@ -88,8 +88,8 @@ function temperatureInF(temp, unit) {
       return Math.round(farenheit) + unit; 
   }
 }
-/* console.log(temperatureInF(88, "F")) */
-console.log(temperatureInF(24, "C"))
+console.log(temperatureInF(88, "F"))
+/* console.log(temperatureInF(24, "C")) */
 
 
 
@@ -109,9 +109,15 @@ console.log(temperatureInF(24, "C"))
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  let leiaObj = {
+    id: id,
+    name: name,
+    email: email
+  } 
+  console.log(leiaObj)
 }
+makePersonObject(5, 'Leia', 'leia@gmail.com')
 
 /**
  * ### Challenge `getName`
