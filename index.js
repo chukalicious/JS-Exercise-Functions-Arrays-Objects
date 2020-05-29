@@ -176,38 +176,19 @@ appleIndex(fruit);  */
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
-let newFruit =[]
-for (var i = 0; i < fruit.length; i += 1) {
-  if (fruit[i] === 'apple') {
-    fruit[i] = true;
-  } else {
-    fruit[i] = false
-  }
-  
-}
-/* for (var i = 0; i < fruit.length; i += 1) {
-  if(fruit[i] !== 'apple') {
-    fruit[i] = false
-  } */
-
-
-
-
 
 function isItAnApple(array) {
-  let valuesArray =[]
-  /* console.log(fruit) */
   for (var i = 0; i < array.length; i += 1) {
-    valuesArray.pop(array[i])
     if (array[i] === 'apple') {
-      
-      //replace the value with true using the splice method
+      array[i] = true;
     } else {
-      return array[i] === false; 
+      array[i] = false
     }
   }
 } 
-/* console.log(isItAnApple(fruit));  */
+isItAnApple(fruit)
+
+console.log(fruit)
 
 
 
