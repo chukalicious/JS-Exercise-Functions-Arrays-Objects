@@ -176,17 +176,20 @@ appleIndex(fruit);  */
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
-let newArray =[]
+let newFruit =[]
 for (var i = 0; i < fruit.length; i += 1) {
   if (fruit[i] === 'apple') {
     fruit[i] = true;
+  } else {
+    fruit[i] = false
   }
-  for (var i = 0; i < fruit.length; i += 1) {
-    if(fruit[i] !== 'apple') {
-      fruit[i] = false
-    }
-  }
+  
 }
+/* for (var i = 0; i < fruit.length; i += 1) {
+  if(fruit[i] !== 'apple') {
+    fruit[i] = false
+  } */
+
 
 
 
