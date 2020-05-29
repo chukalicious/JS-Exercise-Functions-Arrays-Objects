@@ -154,12 +154,12 @@ getName('Kat');
  * the returned value should be: 2.
 */
 
-let fruit = ['orange', 'grape', 'apple', 'banana', 'mango']
-function appleIndex(arr) {
+/* let fruit = ['orange', 'grape', 'apple', 'banana', 'mango'] */
+/* function appleIndex(arr) {
   let faveFruit = arr[2];
   return faveFruit; 
 }
-appleIndex(fruit); 
+appleIndex(fruit);  */
 
 /**
  * ### Challenge `isItAnApple`
@@ -171,15 +171,35 @@ appleIndex(fruit);
  * if the corresponding entry in the original array is 'apple' 
  * and `false` if it is anything else.
  * 
- * 
  * For example, if we invoke `isItAnApple`
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
+
+for (var i = 0; i < fruit.length; i += 1) {
+  if (fruit[i] === 'apple') {
+    let newArray = []
+    fruit.push(true);
+  }
 }
 
+
+
+function isItAnApple(array) {
+  let valuesArray =[]
+  /* console.log(fruit) */
+  for (var i = 0; i < array.length; i += 1) {
+    valuesArray.pop(array[i])
+    if (array[i] === 'apple') {
+      
+      //replace the value with true using the splice method
+    } else {
+      return array[i] === false; 
+    }
+  }
+} 
+/* console.log(isItAnApple(fruit));  */
 
 
 
