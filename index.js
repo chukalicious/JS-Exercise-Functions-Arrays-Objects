@@ -176,19 +176,34 @@ appleIndex(fruit);  */
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
-let newFruit =[]
-for (var i = 0; i < fruit.length; i += 1) {
+/* let newFruit;  */
+/* for (var i = 0; i < fruit.length; i += 1) {
   if (fruit[i] === 'apple') {
     fruit[i] = true;
   } else {
-    fruit[i] = false
+    fruit[i] = false;
   }
   
+} */
+
+//retrying the apple:
+function fruitFunction(array) {
+  
+  for (var i = 0; i < array.length; i += 1) {
+    if (array[i] === 'apple') {
+      array[i] = true; 
+    } else {
+      array[i] = false; 
+    }
+    let newFruit = [] 
+    newFruit.push(array); 
+    return newFruit; 
+
+  }
 }
-/* for (var i = 0; i < fruit.length; i += 1) {
-  if(fruit[i] !== 'apple') {
-    fruit[i] = false
-  } */
+fruitFunction(fruit); 
+
+
 
 
 
@@ -262,7 +277,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+ 
 }
 
 /**
