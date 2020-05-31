@@ -188,18 +188,17 @@ let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
 
 //retrying the apple:
 function fruitFunction(array) {
-  
-  for (var i = 0; i < array.length; i += 1) {
-    if (array[i] === 'apple') {
-      array[i] = true; 
+  let newFruit = []; 
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === 'apple') {
+      array[i] = true;
+      newFruit.push(array[i]);
     } else {
-      array[i] = false; 
+      array[i] = false;
+      newFruit.push(array[i]);
     }
-    let newFruit = [] 
-    newFruit.push(array); 
-    return newFruit; 
-
   }
+  console.log(newFruit)
 }
 fruitFunction(fruit); 
 
