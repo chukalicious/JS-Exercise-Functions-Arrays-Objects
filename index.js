@@ -429,3 +429,39 @@ function carMaker(/* code here */) {
 
 
 
+///////////////////////////
+let numbers = [32, 21, 4, 5, 3, 45, 21, 32, 654,43, 87, 54]; 
+
+//fill 3 arrays with numbers if they meet certain criteria
+function threeArrays(arr) {
+  let array1 = []; 
+  let array2 = []; 
+  let array3 = []; 
+  for(var i = 0; i < arr.length; i++) {
+    if(arr[i] < 10) {
+      array1.push(arr[i]);
+    } else if (arr[i] >= 11 &&    arr[i] < 100) {
+      array2.push(arr[i]); 
+    } else {
+      array3.push(arr[i]); 
+    }
+  }
+  console.log(array1); 
+  console.log(array2);
+  console.log(array3);
+}
+threeArrays(numbers); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
