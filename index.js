@@ -187,7 +187,7 @@ let fruit = ['orange', 'apple', 'banana', 'apples', 'apple', 'mango']
 } */
 
 //retrying the apple:
-function fruitFunction(array) {
+function isItAnApple(array) {
   let newFruit = []; 
   for(var i = 0; i < array.length; i++) {
     if(array[i] === 'apple') {
@@ -200,29 +200,7 @@ function fruitFunction(array) {
   }
   console.log(newFruit)
 }
-fruitFunction(fruit); 
-
-
-
-
-
-
-
-function isItAnApple(array) {
-  let valuesArray =[]
-  /* console.log(fruit) */
-  for (var i = 0; i < array.length; i += 1) {
-    valuesArray.pop(array[i])
-    if (array[i] === 'apple') {
-      
-      //replace the value with true using the splice method
-    } else {
-      return array[i] === false; 
-    }
-  }
-} 
-/* console.log(isItAnApple(fruit));  */
-
+isItAnApple(fruit); 
 
 
 // ⭐️ Example Test Data ⭐️
